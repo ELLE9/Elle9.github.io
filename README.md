@@ -2,7 +2,7 @@
 
 ## 
 
-### I enjoy working with data and turning seemingly meaningless data into valueable insights fascinates me. This is the start of my Data Science journey!
+### I enjoy working with data and turning seemingly meaningless data into valuable insights fascinates me. This is the start of my Data Science journey!
 
 # 
 

@@ -16,7 +16,6 @@
   	list-style: none;
 	}
 
-
    .navbar-brand:hover {
   	text-decoration: underline;
 	}
@@ -40,4 +39,18 @@
 
    .footer p{
 	margin-bottom: 0px;
+  }
+
+   nav[data-toggle="toc"] {
+  top: 42px;
+  }
+
+   @media (max-width: 768px) {
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+    }
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+    }
   }

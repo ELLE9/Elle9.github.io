@@ -1,0 +1,43 @@
+ <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .dropdown-menu a{
+  	color: lightgrey;
+  }
+  
+  .navbar-nav a:hover, .dropdown:hover .dropbtn {
+	background-color: darkgrey; 
+  }
+  
+  .navbar {
+  	padding: 0;
+  	padding-left:100px;
+  	list-style: none;
+	}
+
+
+   .navbar-brand:hover {
+  	text-decoration: underline;
+	}
+
+   .dropdown-menu {
+        border: none;
+        margin-top: 1px;
+    }
+
+   body {
+    	padding-top: 20px;
+	background-color:#F0F0F0;
+  }
+   
+   .jumbotron {
+	position: relative;
+	text-align:center;
+	background-color:#F0F0F0;
+	color:black;
+}
+
+ 
+  </style>

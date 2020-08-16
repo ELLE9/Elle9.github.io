@@ -2,8 +2,8 @@
 
 ## 
 
-### I enjoy working with data and turning seemingly meaningless data into valuable insights fascinates me. This is the start of my Data Science journey!
+### I enjoy working with data and turning seemingly meaningless data into valuable insights fascinates me.
 
 # 
 
-This website will contain projects I've worked on and classes I've taken for professional development.
+This website will contain projects I've worked on and courses I've taken for professional development.

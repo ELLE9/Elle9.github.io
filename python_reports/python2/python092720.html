@@ -13084,7 +13084,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {"height": "712px", "width": "434px"}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "384px"}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {"height": "712px", "width": "434px"}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "384px"}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13108,7 +13108,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h1><p>This project focuses on the Exploratory Data Analysis, including data exploration, data preparation, and data cleaning. The dataset of interest here is the training dataset of <a href="https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset">Loan Prediction Problem Dataset</a>. The original problem is to predict customers' loan eligiblity based on their application details. This project does not cover the Loan Prediction steps nor the Machine Learning algorithms.</p>
+<h2 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h2><p>This project focuses on the Exploratory Data Analysis, including data exploration, data preparation, and data cleaning. The dataset of interest here is the training dataset of <a href="https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset">Loan Prediction Problem Dataset</a>. The original problem is to predict customers' loan eligiblity based on their application details. This project does not cover the Loan Prediction steps nor the Machine Learning algorithms.</p>
 <p><strong>Data Dictionary:</strong></p>
 <ul>
 <li>Loan_ID: Unique Loan ID</li>
@@ -13293,7 +13293,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-Exploration-and-Preparation">Data Exploration and Preparation<a class="anchor-link" href="#Data-Exploration-and-Preparation">&#182;</a></h1><h2 id="Variable-Identification">Variable Identification<a class="anchor-link" href="#Variable-Identification">&#182;</a></h2>
+<h2 id="Data-Exploration-and-Preparation">Data Exploration and Preparation<a class="anchor-link" href="#Data-Exploration-and-Preparation">&#182;</a></h2><h3 id="Variable-Identification">Variable Identification<a class="anchor-link" href="#Variable-Identification">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13411,7 +13411,7 @@ memory usage: 62.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Section-Summary">Section Summary<a class="anchor-link" href="#Section-Summary">&#182;</a></h3><p>The dataset can be separated into the following two variable categories:</p>
+<h4 id="Section-Summary">Section Summary<a class="anchor-link" href="#Section-Summary">&#182;</a></h4><p>The dataset can be separated into the following two variable categories:</p>
 <p><strong>Categorical:</strong></p>
 <ul>
 <li>Gender</li>
@@ -13436,14 +13436,14 @@ memory usage: 62.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Univariate-Analysis">Univariate Analysis<a class="anchor-link" href="#Univariate-Analysis">&#182;</a></h2>
+<h3 id="Univariate-Analysis">Univariate Analysis<a class="anchor-link" href="#Univariate-Analysis">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Categorical-Variables">Categorical Variables<a class="anchor-link" href="#Categorical-Variables">&#182;</a></h3>
+<h4 id="Categorical-Variables">Categorical Variables<a class="anchor-link" href="#Categorical-Variables">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13610,7 +13610,7 @@ Name: Loan_Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Continuous-Variables">Continuous Variables<a class="anchor-link" href="#Continuous-Variables">&#182;</a></h3>
+<h4 id="Continuous-Variables">Continuous Variables<a class="anchor-link" href="#Continuous-Variables">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -14134,7 +14134,7 @@ Name: Loan_Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Section-Summary">Section Summary<a class="anchor-link" href="#Section-Summary">&#182;</a></h3><p><strong>Variables with missing values:</strong></p>
+<h4 id="Section-Summary">Section Summary<a class="anchor-link" href="#Section-Summary">&#182;</a></h4><p><strong>Variables with missing values:</strong></p>
 <ul>
 <li>Gender (13 or 2.1%)</li>
 <li>Married (3 or 0.5%)</li>
@@ -14158,21 +14158,21 @@ Name: Loan_Status, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bivariate-Analysis">Bivariate Analysis<a class="anchor-link" href="#Bivariate-Analysis">&#182;</a></h2>
+<h3 id="Bivariate-Analysis">Bivariate Analysis<a class="anchor-link" href="#Bivariate-Analysis">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Categorical-and-Categorical">Categorical and Categorical<a class="anchor-link" href="#Categorical-and-Categorical">&#182;</a></h3>
+<h4 id="Categorical-and-Categorical">Categorical and Categorical<a class="anchor-link" href="#Categorical-and-Categorical">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Gender">Loan_Status and Gender<a class="anchor-link" href="#Loan_Status-and-Gender">&#182;</a></h4>
+<h5 id="Loan_Status-and-Gender">Loan_Status and Gender<a class="anchor-link" href="#Loan_Status-and-Gender">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -14553,7 +14553,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Married">Loan_Status and Married<a class="anchor-link" href="#Loan_Status-and-Married">&#182;</a></h4>
+<h5 id="Loan_Status-and-Married">Loan_Status and Married<a class="anchor-link" href="#Loan_Status-and-Married">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -14680,7 +14680,7 @@ Dependent (reject H_0)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Education">Loan_Status and Education<a class="anchor-link" href="#Loan_Status-and-Education">&#182;</a></h4>
+<h5 id="Loan_Status-and-Education">Loan_Status and Education<a class="anchor-link" href="#Loan_Status-and-Education">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -14861,7 +14861,7 @@ Dependent (reject H_0)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Self_Employed">Loan_Status and Self_Employed<a class="anchor-link" href="#Loan_Status-and-Self_Employed">&#182;</a></h4>
+<h5 id="Loan_Status-and-Self_Employed">Loan_Status and Self_Employed<a class="anchor-link" href="#Loan_Status-and-Self_Employed">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -15050,7 +15050,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Loan_Amount_Term">Loan_Status and Loan_Amount_Term<a class="anchor-link" href="#Loan_Status-and-Loan_Amount_Term">&#182;</a></h4>
+<h5 id="Loan_Status-and-Loan_Amount_Term">Loan_Status and Loan_Amount_Term<a class="anchor-link" href="#Loan_Status-and-Loan_Amount_Term">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -15188,7 +15188,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Credit_History">Loan_Status and Credit_History<a class="anchor-link" href="#Loan_Status-and-Credit_History">&#182;</a></h4>
+<h5 id="Loan_Status-and-Credit_History">Loan_Status and Credit_History<a class="anchor-link" href="#Loan_Status-and-Credit_History">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -15373,7 +15373,7 @@ Dependent (reject H_0)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-Property_Area">Loan_Status and Property_Area<a class="anchor-link" href="#Loan_Status-and-Property_Area">&#182;</a></h4>
+<h5 id="Loan_Status-and-Property_Area">Loan_Status and Property_Area<a class="anchor-link" href="#Loan_Status-and-Property_Area">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -15549,14 +15549,14 @@ Dependent (reject H_0)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Categorical-and-Continuous">Categorical and Continuous<a class="anchor-link" href="#Categorical-and-Continuous">&#182;</a></h3>
+<h4 id="Categorical-and-Continuous">Categorical and Continuous<a class="anchor-link" href="#Categorical-and-Continuous">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-ApplicantIncome">Loan_Status and ApplicantIncome<a class="anchor-link" href="#Loan_Status-and-ApplicantIncome">&#182;</a></h4>
+<h5 id="Loan_Status-and-ApplicantIncome">Loan_Status and ApplicantIncome<a class="anchor-link" href="#Loan_Status-and-ApplicantIncome">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -15848,7 +15848,7 @@ Two population means are equal (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Loan_Status-and-LoanAmount">Loan_Status and LoanAmount<a class="anchor-link" href="#Loan_Status-and-LoanAmount">&#182;</a></h4>
+<h5 id="Loan_Status-and-LoanAmount">Loan_Status and LoanAmount<a class="anchor-link" href="#Loan_Status-and-LoanAmount">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -16138,14 +16138,14 @@ Two population means are equal (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Continuous-and-Contintuous">Continuous and Contintuous<a class="anchor-link" href="#Continuous-and-Contintuous">&#182;</a></h3>
+<h4 id="Continuous-and-Contintuous">Continuous and Contintuous<a class="anchor-link" href="#Continuous-and-Contintuous">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="ApplicantIncome-vs.-LoanAmount">ApplicantIncome vs. LoanAmount<a class="anchor-link" href="#ApplicantIncome-vs.-LoanAmount">&#182;</a></h4>
+<h5 id="ApplicantIncome-vs.-LoanAmount">ApplicantIncome vs. LoanAmount<a class="anchor-link" href="#ApplicantIncome-vs.-LoanAmount">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -16200,7 +16200,7 @@ Two population means are equal (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="CoapplicantIncome-vs.-LoanAmount">CoapplicantIncome vs. LoanAmount<a class="anchor-link" href="#CoapplicantIncome-vs.-LoanAmount">&#182;</a></h4>
+<h5 id="CoapplicantIncome-vs.-LoanAmount">CoapplicantIncome vs. LoanAmount<a class="anchor-link" href="#CoapplicantIncome-vs.-LoanAmount">&#182;</a></h5>
 </div>
 </div>
 </div>
@@ -16269,7 +16269,7 @@ Two population means are equal (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Missing-value-Treatment">Missing value Treatment<a class="anchor-link" href="#Missing-value-Treatment">&#182;</a></h1>
+<h2 id="Missing-value-Treatment">Missing value Treatment<a class="anchor-link" href="#Missing-value-Treatment">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16295,7 +16295,7 @@ Two population means are equal (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Credit_History-Imputation">Credit_History Imputation<a class="anchor-link" href="#Credit_History-Imputation">&#182;</a></h2><p>Before the actual imputation, we should examine if there's any correlation between <em>Credit_History</em> and other variables.</p>
+<h3 id="Credit_History-Imputation">Credit_History Imputation<a class="anchor-link" href="#Credit_History-Imputation">&#182;</a></h3><p>Before the actual imputation, we should examine if there's any correlation between <em>Credit_History</em> and other variables.</p>
 
 </div>
 </div>
@@ -16303,7 +16303,7 @@ Two population means are equal (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credit_history-vs-Gender">Credit_history vs Gender<a class="anchor-link" href="#Credit_history-vs-Gender">&#182;</a></h3><p><strong>Chi-square Test</strong></p>
+<h4 id="Credit_history-vs-Gender">Credit_history vs Gender<a class="anchor-link" href="#Credit_history-vs-Gender">&#182;</a></h4><p><strong>Chi-square Test</strong></p>
 <p>$
 H_0: \:There \:is \:no \:relationship \:between \:variables\:Credit\_History\:and\:Gender
 \\H_1:\: Negation\:of\:H_0
@@ -16354,7 +16354,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credit_History-vs-Married">Credit_History vs Married<a class="anchor-link" href="#Credit_History-vs-Married">&#182;</a></h3><p><strong>Chi-square Test</strong></p>
+<h4 id="Credit_History-vs-Married">Credit_History vs Married<a class="anchor-link" href="#Credit_History-vs-Married">&#182;</a></h4><p><strong>Chi-square Test</strong></p>
 <p>$
 H_0: \:There \:is \:no \:relationship \:between \:variables\:Credit\_History\:and\:Married
 \\H_1:\: Negation\:of\:H_0
@@ -16405,7 +16405,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credit_History-vs-Education">Credit_History vs Education<a class="anchor-link" href="#Credit_History-vs-Education">&#182;</a></h3><p><strong>Chi-square Test</strong></p>
+<h4 id="Credit_History-vs-Education">Credit_History vs Education<a class="anchor-link" href="#Credit_History-vs-Education">&#182;</a></h4><p><strong>Chi-square Test</strong></p>
 <p>$
 H_0: \:There \:is \:no \:relationship \:between \:variables\:Credit\_History\:and\:Education
 \\H_1:\: Negation\:of\:H_0
@@ -16456,7 +16456,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credit_History-vs-Self_Employed">Credit_History vs Self_Employed<a class="anchor-link" href="#Credit_History-vs-Self_Employed">&#182;</a></h3><p><strong>Chi-square Test</strong></p>
+<h4 id="Credit_History-vs-Self_Employed">Credit_History vs Self_Employed<a class="anchor-link" href="#Credit_History-vs-Self_Employed">&#182;</a></h4><p><strong>Chi-square Test</strong></p>
 <p>$
 H_0: \:There \:is \:no \:relationship \:between \:variables\:Credit\_History\:and\:Self\_Employed
 \\H_1:\: Negation\:of\:H_0
@@ -16507,7 +16507,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credit_History-vs-Property_Area">Credit_History vs Property_Area<a class="anchor-link" href="#Credit_History-vs-Property_Area">&#182;</a></h3><p><strong>Chi-square Test</strong></p>
+<h4 id="Credit_History-vs-Property_Area">Credit_History vs Property_Area<a class="anchor-link" href="#Credit_History-vs-Property_Area">&#182;</a></h4><p><strong>Chi-square Test</strong></p>
 <p>$
 H_0: \:There \:is \:no \:relationship \:between \:variables\:Credit\_History\:and\:Property\_Area
 \\H_1:\: Negation\:of\:H_0
@@ -16558,7 +16558,7 @@ Independent (H_0 holds true)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Credit_History-vs-ApplicantIncome">Credit_History vs ApplicantIncome<a class="anchor-link" href="#Credit_History-vs-ApplicantIncome">&#182;</a></h3><p><strong>Two sample Z-Test (ApplicantIncome splitted by Loan_Status)</strong></p>
+<h4 id="Credit_History-vs-ApplicantIncome">Credit_History vs ApplicantIncome<a class="anchor-link" href="#Credit_History-vs-ApplicantIncome">&#182;</a></h4><p><strong>Two sample Z-Test (ApplicantIncome splitted by Loan_Status)</strong></p>
 $$
 H_0: \:\mu_{N_{applicantIncome}} =\:\mu_{Y_{applicantIncome}}
 \\H_1:\: Negation\:of\:H_0
@@ -16804,7 +16804,7 @@ There isn't any correlation between <em>Credit_History</em> and other predictor 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Imputation-using-Most-Frequent-values">Imputation using Most Frequent values<a class="anchor-link" href="#Imputation-using-Most-Frequent-values">&#182;</a></h2>
+<h3 id="Imputation-using-Most-Frequent-values">Imputation using Most Frequent values<a class="anchor-link" href="#Imputation-using-Most-Frequent-values">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -16866,7 +16866,7 @@ memory usage: 62.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Deletion">Deletion<a class="anchor-link" href="#Deletion">&#182;</a></h2>
+<h3 id="Deletion">Deletion<a class="anchor-link" href="#Deletion">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -16936,7 +16936,7 @@ memory usage: 57.2+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Outlier-Treatment">Outlier Treatment<a class="anchor-link" href="#Outlier-Treatment">&#182;</a></h1>
+<h2 id="Outlier-Treatment">Outlier Treatment<a class="anchor-link" href="#Outlier-Treatment">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17163,7 +17163,7 @@ memory usage: 57.2+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Trimming">Trimming<a class="anchor-link" href="#Trimming">&#182;</a></h2><p>We will use Trimming here as our outlier treatment method.</p>
+<h3 id="Trimming">Trimming<a class="anchor-link" href="#Trimming">&#182;</a></h3><p>We will use Trimming here as our outlier treatment method.</p>
 
 </div>
 </div>
@@ -17497,7 +17497,7 @@ memory usage: 57.2+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Variable-Correlations-After-Data-Cleaning">Variable Correlations After Data Cleaning<a class="anchor-link" href="#Variable-Correlations-After-Data-Cleaning">&#182;</a></h1>
+<h2 id="Variable-Correlations-After-Data-Cleaning">Variable Correlations After Data Cleaning<a class="anchor-link" href="#Variable-Correlations-After-Data-Cleaning">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17612,7 +17612,7 @@ memory usage: 48.3+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>Depending on different methods of missing-value and/or outlier treatments, the level of data loss might have impact on prediction models which are used to solve the original problem. This project is only to explore the dataset and to describe dataset characterizations through data visualization and statistical techniques. Below shows how much each variable correlates with the target variable.</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>Depending on different methods of missing-value and/or outlier treatments, the level of data loss might have impact on prediction models which are used to solve the original problem. This project is only to explore the dataset and to describe dataset characterizations through data visualization and statistical techniques. Below shows how much each variable correlates with the target variable.</p>
 
 </div>
 </div>

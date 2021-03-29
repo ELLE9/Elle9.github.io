@@ -1,5 +1,5 @@
 <h1 id="designing-a-data-model-for-`catch-the-pink-flamingo`"><a name="designing-a-data-model-for-`catch-the-pink-flamingo`" href="#designing-a-data-model-for-`catch-the-pink-flamingo`"></a>Designing a Data Model for <code>Catch the Pink Flamingo</code></h1>
-<p><strong>Author: Zhanglin Liu</strong><br><strong>  Date: 03/28/2021</strong><br><em>This assignment is for Coursera course: Big Data Modeling and Management Systems.</em></p>
+<p><strong>Author: Zhanglin Liu</strong><br><strong>  Date: 03/28/2021</strong><br><em>This assignment is for Coursera course: Big Data Modelling and Management Systems.</em></p>
 <h3 id="user-clicks"><a name="user-clicks" href="#user-clicks"></a>User Clicks</h3>
 <p>We will need a table to keep track of <strong>user clicks</strong>. Below is a rough structure of the table, but it is incomeplete in the following ways:</p>
 <ol>
@@ -95,7 +95,7 @@
 </table>
 <h3 id="chat-data"><a name="chat-data" href="#chat-data"></a>Chat Data</h3>
 <p>Next, we will loook at the <strong>chat data</strong>. We know users can chat when they discuss their team’s strategy or when they decide if a new player should join a team. This can be modeled as a graph, as shown below.</p>
-<p><img src="C:\Users\Elle\Desktop\Project\big data\chat_data_graph.PNG" alt="chat_data_graph"></p>
+<p><img src="https://elle9.github.io/fun_projects/project1/chat_data_graph.PNG" alt="chat_data_graph"></p>
 <p>The nodes of the graphs are entities and the edges are actions they take and the content of the chat. When this graph is populated, we need to include a number of properties to the nodes and edges. For example, each action edge should have a timestamp attribute to indicate when the action occurred. Using this graph, we should be able to analyze different types of questions.</p>
 <p><strong>List all node and edge properties of a graph</strong><br><strong>Briefly explain how you would use the graph to answer the following five questions</strong></p>
 <ol>
@@ -153,10 +153,22 @@
 <li>In order to find which team has more conversations, we can take a look at the edges of user/teams node and count the number of chat session nodes with the edge properties of <code>joins</code> and <code>starts</code> from the user/teams node.</li><li>With edge action of <code>leaves</code>, count the number of chat session nodes with the edge <code>joins</code> and <code>starts</code> from User node.</li><li>User <code>joins</code> or <code>starts</code> a chat session (where a specific time period is specified), with user <code>writes</code> chat text and chat session <code>contains</code> the same chat text (this is to make sure users are in one chat session), identify the chat text node with the most count of <code>contains</code> or <code>writes</code> edges.</li><li>User <code>joins</code> or <code>starts</code> a chat session (where chat session is specified), with user <code>writes</code> chat text and chat session <code>contains</code> the same chat text, identify the user node with the most count of edge action <code>write</code> .</li><li>User <code>joins</code> or <code>starts</code> chat sessions, count chat session nodes which grouped by user.</li></ol>
 <h3 id="structure-of-the-game"><a name="structure-of-the-game" href="#structure-of-the-game"></a>Structure of the Game</h3>
 <p>We will need to design the structure of the game itself. We will use the following partially specified semistructured data object. </p>
-<p><img src="C:\Users\Elle\Desktop\Project\big data\semistructured_data_object_graph.PNG" alt="semistruc_obj_graph"></p>
+<p><img src="https://elle9.github.io/fun_projects/project1/semistructured_data_object_graph.PNG" alt="semistruc_obj_graph"></p>
 <p>We have seen that both XML and JSON are essentially trees. The tree here says that the “missions” category can have several “mission” items. Each mission item will have an associated flamingo type (e.g., flamingos with stars on their backs) and the number of flamingos of that type released to the users to catch. We also have flamingos of different tyeps and subtypes, where each subtype will  have a list of properties.</p>
 <p><strong>Explain how you might extend the tree with at least five specific flamingo properties. For example, beak-color whose values might be “bright-red” or “pink”.</strong></p>
 <p><strong>Your objective is to make sure the tree has enough properties to launch the game and connect with the three data structures we have used so far.</strong></p>
 <p><strong>Response</strong>:<br>As this is a popular game, we should expect that users will try to complete levels in relatively short period of time, we dont want the next levels be too simple as it will be no fun and users will lose interest soon. Thus we should make next levels more challenging and relatively harder to complete. One way would be to extend the flamingo properties to achieve this. Flamingo Properties could be:</p>
 <ul>
 <li>FlamingoNames (string), examples: greater flamingo, lesser flamingo, Chilean flamingo, Andean flamingo…</li><li>FlamingoHeight_ft (string), examples: 3.9-4.7, 2.6-3.8, …</li><li>FlamingoBeak-color (string), examples: pink, bright-red…</li><li>FlamingoLeg-color (string), examples: pink, white…</li><li>FlamingoFeather-color (string), examples: pink, white…</li></ul>
+<footer class="footer text-center">
+<hr>
+  <p style="text-align: center;">Copyright &copy; 2020<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Zhanglin Liu</p>
+  <p style="text-align: center;"><span style="color: #808080;"><a href="https://elle9.github.io/">https://elle9.github.io/</a></span></p>
+  <p style="text-align: center;"><span style="color: #808080;">All Rights Reserved</span></p>
+<!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+  <p style="text-align: center;">
+    <a href="https://www.linkedin.com/in/zhanglin-elle-liu-b76a2a149/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/ELLE9/" class="fa fa-github"></a></p>
+</footer>
